@@ -1,8 +1,9 @@
 # dc-date-and-time  
 現在の日付と時刻を表示してクリップボードにコピーするだけのスクリプト。
 ## 使い方  
-1. dc-date-and-time.jsを読み込む。  
-2. 以下のHTMLを記述する。  
+1. jQueryを読み込む。
+2. dc-date-and-time.jsを読み込む。
+3. 以下のHTMLを記述する。
 ```
 <div class="dcdt-wrap">
     <form>
