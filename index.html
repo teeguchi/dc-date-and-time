@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>日付と時刻のコピー</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="日付と時刻を表示してクリップボードにコピーできます">
+		
+		<meta property="og:title" content="日付と時刻のコピー">
+		<meta property="og:type" content="article">
+		<meta property="og:description" content="日付と時刻を表示してクリップボードにコピーできます">
+		<meta property="og:url" content="https://teeguchi.com/sh/dcdt/">
+		<meta property="og:site_name" content="TeeGuchi">
+		<meta property="og:locale" content="ja_JP">
+		<meta property="og:image" content="https://teeguchi.com/sh/dcdt/image/img_ogp_600x315.png">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@teeguchicom">
+		
+		<link rel="canonical" href="https://teeguchi.com/sh/dcdt/">
+		<link rel="stylesheet" href="dc-date-and-time.css">
+		<link rel="icon" href="image/siteicon_180x180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="image/siteicon_180x180.png">
+		<meta name="msapplication-TileImage" content="image/siteicon_270x270.png">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1><span>日付と時刻のコピー</span></h1>
+			<div class="dcdt-wrap">
+				<!-- Clock -->
+				<div class="dcclock-wrap">
+					<p id="dcclock"></p>
+					<div class="ref-btn-wrap">
+						<button id="dcdt-ref" type="button"><span>更新</span></button>
+						<div class="dsp-time-wrap"><input id="dsp-time" type="checkbox"><label for="dsp-time"><span>時間表示</span></label></div>
+					</div>
+				</div>
+				
+				<!-- Calender -->
+				<div class="cal-wrap">
+					<div id="cal-form">
+						<div class="cal-year-wrap"><select id="cal-year"></select></div>
+						<div class="cal-month-wrap"><select id="cal-month">
+							<option value="1">1月</option>
+							<option value="2">2月</option>
+							<option value="3">3月</option>
+							<option value="4">4月</option>
+							<option value="5">5月</option>
+							<option value="6">6月</option>
+							<option value="7">7月</option>
+							<option value="8">8月</option>
+							<option value="9">9月</option>
+							<option value="10">10月</option>
+							<option value="11">11月</option>
+							<option value="12">12月</option>
+						</select></div>
+					</div>
+					<table id="cal-dsp">
+						<thead>
+							<tr id="cal-week">
+								<th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				
+				<!-- dcdt -->
+				<div id="dcdt-form">
+					<div class="dcdt-select-wrap">
+						<select id="dcdt-select"></select>
+					</div>
+					<div class="dcdt-btn-wrap">
+						<button id="dcdt-cpy" type="button">コピー</button>
+					</div>
+				</div>
+			</div>
+			<div class="sw-btn-wrap"><button id="sw-btn">小窓で開く</button></div>
+			<footer>
+				<small>© 2022 <a href="https://teeguchi.com/">TeeGuchi</a></small>
+			</footer>
+		</div>
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous">
+		</script>
+		<script src="dc-date-and-time.js"></script>
+	</body>
+</html>
