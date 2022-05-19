@@ -327,11 +327,7 @@ jQuery(function($) {
 	$('#cal-year').html(yearHtml);
 	
 	// Month
-	$('#cal-month option').each(function() {
-		if ((cdt.m + 1) == $(this).val()) {
-			$('#cal-month').val((cdt.m + 1));
-		}
-	});
+	$('#cal-month').val((cdt.m + 1));
 	
 	// Calender
 	let setNoy = cdt.y; // 年
