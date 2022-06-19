@@ -25,7 +25,7 @@ function getCdt() {
 // フォーマット_A
 function getFormatA(cdt, time) {
 	const year = cdt.y;
-	const month = cdt.m < 10 ? '0' + (cdt.m + 1) : cdt.m + 1;
+	const month = cdt.m < 9 ? '0' + (cdt.m + 1) : cdt.m + 1;
 	const date = cdt.d < 10 ? '0' + cdt.d : cdt.d;
 	const hour = cdt.hr < 10 ? '0' + cdt.hr : cdt.hr;
 	const minute = cdt.min < 10 ? '0' + cdt.min : cdt.min;
@@ -39,7 +39,7 @@ function getFormatA(cdt, time) {
 // フォーマット_B
 function getFormatB(cdt, time) {
 	const year = cdt.y;
-	const month = cdt.m < 10 ? '0' + (cdt.m + 1) : cdt.m + 1;
+	const month = cdt.m < 9 ? '0' + (cdt.m + 1) : cdt.m + 1;
 	const date = cdt.d < 10 ? '0' + cdt.d : cdt.d;
 	const week = ['(日)', '(月)', '(火)', '(水)', '(木)', '(金)', '(土)'];
 	const hour = cdt.hr < 10 ? '0' + cdt.hr : cdt.hr;
@@ -128,7 +128,7 @@ function getFormatG(cdt, time) {
 // フォーマット_H
 function getFormatH(cdt, time) {
 	const year = cdt.y;
-	const month = cdt.m < 10 ? '0' + (cdt.m + 1) : cdt.m + 1;
+	const month = cdt.m < 9 ? '0' + (cdt.m + 1) : cdt.m + 1;
 	const date = cdt.d < 10 ? '0' + cdt.d : cdt.d;
 	const hour = cdt.hr < 10 ? '0' + cdt.hr : cdt.hr;
 	const minute = cdt.min < 10 ? '0' + cdt.min : cdt.min;
@@ -142,7 +142,7 @@ function getFormatH(cdt, time) {
 // フォーマット_I
 function getFormatI(cdt, time) {
 	const y = cdt.y;
-	const m = cdt.m < 10 ? '0' + (cdt.m + 1) : cdt.m + 1;
+	const m = cdt.m < 9 ? '0' + (cdt.m + 1) : cdt.m + 1;
 	const d = cdt.d < 10 ? '0' + cdt.d : cdt.d;
 	const ymd = Number(y + '' + m + '' +  d);
 	let era = '';
